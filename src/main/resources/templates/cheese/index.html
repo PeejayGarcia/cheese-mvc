@@ -7,11 +7,11 @@
 <body>
 <h1 th:text="${title}">Default Title</h1>
 
+<p th:unless="${cheeses} and ${cheeses.size()}">no cheese :(</p>
+
 <ul>
-    <li th:each="cheese : ${cheeses}" th:text="${cheese}"></li>
+    <li th:each ="cheese : ${cheeses}" th:text="${cheese}"></li>
 </ul>
-<ul>
-    <li th:each="cheese : ${cheeses}" th:text="${cheese}"></li>
-</ul>
+
 </body>
 </html>
